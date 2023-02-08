@@ -1,0 +1,20 @@
+@import '../../styles/colors.scss';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 55px 50px;
+
+  &-list {
+    display: flex;
+    align-items: center;
+    gap: 1.25em;
+
+    &__item {
+      &__self {
+        color: rgba($dark-blue, 50%);
+      }
+    }
+  }
+}
