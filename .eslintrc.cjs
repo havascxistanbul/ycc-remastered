@@ -19,6 +19,17 @@ module.exports = {
     rules: {
         "semi": [2, "always"],
         "@typescript-eslint/semi": [2, "always"],
-        "@typescript-eslint/space-before-function-paren": [0]
+        "@typescript-eslint/space-before-function-paren": [0],
+        "@typescript-eslint/member-delimiter-style": ["error", {
+            multiline: {
+                delimiter: 'semi',
+                requireLast: true,
+            },
+            singleline: {
+                delimiter: 'semi',
+                requireLast: false,
+            },
+            multilineDetection: "brackets"
+        }],
     }
 }
