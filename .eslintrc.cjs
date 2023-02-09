@@ -18,6 +18,7 @@ module.exports = {
     ],
     rules: {
         "semi": [2, "always"],
-        "@typescript-eslint/semi": [2, "always"]
+        "@typescript-eslint/semi": [2, "always"],
+        "@typescript-eslint/space-before-function-paren": [0]
     }
 }
