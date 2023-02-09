@@ -1,0 +1,23 @@
+@import './mixins/breakpoints.scss';
+@import './reset.scss';
+
+body {
+  margin: auto;
+
+  @include large_desktop {
+    max-width: 1280px;
+  }
+
+  @include small_desktop {
+    max-width: 720px;
+  }
+
+  @include tablet {
+    max-width: 480px;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding: 0 1.25px;
+  }
+}
