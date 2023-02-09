@@ -2,11 +2,11 @@ import React from 'react';
 import './styles.scss';
 
 interface LayoutProps {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
-function Main ({ children }: LayoutProps): JSX.Element {
-  return <main className="container">{children}</main>;
+function Main({ children }: LayoutProps): JSX.Element {
+  return <main>{children}</main>;
 }
 
 export default Main;

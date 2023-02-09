@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/reset.scss';
-import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import './styles/global.scss';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import { HomePage } from "./pages";
+import { HomePage } from './pages';
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <HomePage />
-    },
-])
+  {
+    path: '/',
+    element: <HomePage />,
+  },
+]);
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <RouterProvider router={router} />
-)
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(<RouterProvider router={router} />);
