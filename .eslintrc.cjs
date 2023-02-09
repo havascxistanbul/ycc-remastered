@@ -31,5 +31,6 @@ module.exports = {
             },
             multilineDetection: "brackets"
         }],
+        "@typescript-eslint/comma-dangle": ["error", "always-multiline"]
     }
 }
