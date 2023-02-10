@@ -1,0 +1,28 @@
+@import '../../styles/colors.scss';
+
+.right-col {
+  &__header {
+    color: $dark-blue;
+    font-size: 2.625rem;
+    font-weight: 800;
+  }
+
+  &__paragraph {
+    color: $text-gray;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1.875em;
+  }
+
+  &__cta {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $white;
+    background-color: $main-pink;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.25em;
+    padding: 1em 1.625em;
+    margin-top: 3.125em;
+  }
+}

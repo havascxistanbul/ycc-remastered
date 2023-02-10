@@ -1,7 +1,14 @@
 import React from 'react';
-
-function LeftCol (): JSX.Element {
-  return <div></div>;
+import './styles.scss';
+function LeftCol(props): JSX.Element {
+  return (
+    <div>
+      <img
+        src="https://picsum.photos/670/832"
+        alt=""
+      />
+    </div>
+  );
 }
 
 export default LeftCol;
