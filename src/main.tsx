@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './styles/global.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import { HomePage } from './pages';
+import { HomePage, AboutUsPage, FAQ } from './pages';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <HomePage />,
+  },
+  {
+    path: '/about-us',
+    element: <AboutUsPage />,
+  },
+  {
+    path: '/faq',
+    element: <FAQ />,
   },
 ]);
 

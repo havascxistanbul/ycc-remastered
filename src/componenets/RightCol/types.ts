@@ -15,7 +15,7 @@ interface Slide {
   paragraph: string;
 }
 
-interface QnaItem {
+export interface QnaItem {
   header: string;
   paragraph: string;
 }
