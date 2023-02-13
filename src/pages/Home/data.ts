@@ -13,5 +13,12 @@ export const data: Content = {
       href: '#',
       text: 'Apply Now',
     },
+    icons: [
+      {
+        href: '#',
+        alt: '',
+        path: 'https://picsum.photos/200/100',
+      },
+    ],
   },
 };

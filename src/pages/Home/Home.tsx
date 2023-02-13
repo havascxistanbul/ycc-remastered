@@ -14,6 +14,7 @@ function Home(): JSX.Element {
             header={data.rightCol.header}
             paragraph={data.rightCol.paragraph}
             cta={data.rightCol.cta}
+            icons={data.rightCol.icons}
           />
         </Content>
       </Main>

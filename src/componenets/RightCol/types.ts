@@ -21,6 +21,7 @@ interface QnaItem {
 }
 
 interface Icon {
-  url: string;
+  href?: string;
   alt: string;
+  path: string;
 }

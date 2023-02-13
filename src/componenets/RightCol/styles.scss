@@ -25,4 +25,19 @@
     padding: 1em 1.625em;
     margin-top: 3.125em;
   }
+
+  &__icons {
+    display: flex;
+    gap: 1.875em;
+    margin-top: 3.125em;
+  }
+
+  &__icon {
+    height: 4em;
+
+    &__self {
+      height: 100%;
+      width: auto;
+    }
+  }
 }
