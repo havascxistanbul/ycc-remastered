@@ -1,0 +1,29 @@
+@import "../../styles/colors.scss";
+
+.accordion-item {
+  margin-top: 1.25em;
+  background-color: rgba($dark-blue, 5%);
+  padding: 1.5em 1.875em;
+  border: none;
+  width: 100%;
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: $dark-blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__paragraph {
+    color: $dark-blue;
+    font-size: 1rem;
+    margin-top: 2.5em;
+    text-align: left;
+  }
+}
+
+.hidden {
+  display: none;
+}

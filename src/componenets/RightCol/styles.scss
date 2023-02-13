@@ -1,6 +1,8 @@
 @import '../../styles/colors.scss';
 
 .right-col {
+  overflow-y: scroll;
+
   &__header {
     color: $dark-blue;
     font-size: 2.625rem;

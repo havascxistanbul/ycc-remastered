@@ -15,6 +15,7 @@ function Home(): JSX.Element {
             paragraph={data.rightCol.paragraph}
             cta={data.rightCol.cta}
             icons={data.rightCol.icons}
+            qna={data.rightCol.qna}
           />
         </Content>
       </Main>
