@@ -1,0 +1,59 @@
+@import '../../styles/colors.scss';
+
+.slider {
+  &__header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__chevrons {
+    width: auto;
+    display: flex;
+    justify-content: end;
+  }
+
+  &__chevron {
+    background: none;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: $dark-gray;
+  }
+
+  &__paragraph {
+    color: $text-gray;
+    margin-top: 1.875em;
+  }
+}
+
+.swiper {
+  &-slide {
+    padding-bottom: 1.875em;
+  }
+
+  &-pagination {
+    &-horizontal {
+      bottom: 0 !important;
+    }
+
+    &-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: $light-gray;
+
+      &-active {
+        width: 30px;
+        border-radius: 100px;
+      }
+    }
+  }
+}

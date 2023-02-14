@@ -1,6 +1,6 @@
 export interface RightColTypes {
   header: string;
-  paragraph: string;
+  paragraph?: string;
   cta?: {
     href: string;
     text: string;
@@ -10,7 +10,7 @@ export interface RightColTypes {
   icons?: Icon[];
 }
 
-interface Slide {
+export interface Slide {
   header: string;
   paragraph: string;
 }
