@@ -1,7 +1,9 @@
-div {
-  width: 100%;
-}
+.left-col {
+  align-self: start;
+  flex: 1;
+  height: 100%;
 
-img {
-  width: 100%;
+  & > img {
+    height: 100%;
+  }
 }

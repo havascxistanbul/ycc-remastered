@@ -1,4 +1,5 @@
 import React from 'react';
+import { clsx } from 'clsx';
 import { type RightColTypes } from './types';
 import { RightChevron } from '../Icons';
 import { v4 as uuidv4 } from 'uuid';
@@ -8,7 +9,7 @@ import './styles.scss';
 
 function RightCol({ header, paragraph, cta, qna, slider, icons }: RightColTypes): JSX.Element {
   return (
-    <div className="right-col">
+    <div className={clsx('right-col', qna === undefined && 'right-col--alt')}>
       <h2 className="right-col__header">{header}</h2>
       <p className="right-col__paragraph">{paragraph}</p>
       {icons !== undefined && (

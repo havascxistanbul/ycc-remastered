@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.scss';
 function LeftCol(props): JSX.Element {
   return (
-    <div>
+    <div className="left-col">
       <img
         src="https://picsum.photos/670/832"
         alt=""
