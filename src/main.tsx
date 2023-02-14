@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './styles/global.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import { HomePage, AboutUsPage, FAQ } from './pages';
+import { HomePage, AboutUsPage, ProcessPage, FAQ } from './pages';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: '/faq',
     element: <FAQ />,
+  },
+  {
+    path: '/process',
+    element: <ProcessPage />,
   },
 ]);
 
