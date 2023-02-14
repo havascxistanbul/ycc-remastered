@@ -41,6 +41,8 @@
   }
 
   &-pagination {
+    display: flex;
+
     &-horizontal {
       bottom: 0 !important;
     }
