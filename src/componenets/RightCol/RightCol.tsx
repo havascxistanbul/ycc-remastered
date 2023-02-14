@@ -6,8 +6,6 @@ import { Accordion } from '../Accordion';
 import './styles.scss';
 
 function RightCol({ header, paragraph, cta, qna, slider, icons }: RightColTypes): JSX.Element {
-  console.log(icons);
-
   return (
     <div className="right-col">
       <h2 className="right-col__header">{header}</h2>
