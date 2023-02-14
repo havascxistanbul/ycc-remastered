@@ -3,6 +3,7 @@ import { type RightColTypes } from './types';
 import { RightChevron } from '../Icons';
 import { v4 as uuidv4 } from 'uuid';
 import { Accordion } from '../Accordion';
+import { Slider } from '../Slider';
 import './styles.scss';
 
 function RightCol({ header, paragraph, cta, qna, slider, icons }: RightColTypes): JSX.Element {
@@ -41,6 +42,7 @@ function RightCol({ header, paragraph, cta, qna, slider, icons }: RightColTypes)
         </a>
       )}
       {qna !== undefined && <Accordion items={qna} />}
+      {slider !== undefined && <Slider slider={slider} />}
     </div>
   );
 }
