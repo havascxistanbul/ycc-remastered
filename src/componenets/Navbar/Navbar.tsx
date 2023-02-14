@@ -16,10 +16,10 @@ function Navbar (): JSX.Element {
         />
       </Link>
       <ul className="navbar-list">
-        {NavbarList.map((item) => (
+        {NavbarList.map((item, index) => (
           <li
             className="navbar-list__item"
-            key={item.id}
+            key={index}
           >
             <Link
               to={item.href}

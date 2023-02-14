@@ -1,25 +1,19 @@
-import { v4 as uuidv4 } from 'uuid';
-
 interface ListItem {
-  text: string
-  href: string
-  id: string
+  text: string;
+  href: string;
 }
 
 export const NavbarList: ListItem[] = [
   {
     text: 'About Us',
-    href: '#',
-    id: uuidv4()
+    href: '/about-us',
   },
   {
     text: 'Process',
-    href: '#',
-    id: uuidv4()
+    href: '/process',
   },
   {
-    text: 'Contact Us',
-    href: '#',
-    id: uuidv4()
-  }
+    text: 'FAQ',
+    href: '/faq',
+  },
 ];
