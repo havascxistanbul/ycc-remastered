@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-function LeftCol(props): JSX.Element {
+function LeftCol(): JSX.Element {
   return (
     <div className="left-col">
       <img
