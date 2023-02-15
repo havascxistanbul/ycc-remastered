@@ -6,9 +6,11 @@ export interface Content {
 export const data: Content = {
   leftCol: 'asd',
   rightCol: {
-    header: 'Are you just started your Software Development career?',
+    header: 'Who are we?',
     paragraph:
-      'Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. ',
+      'Young Coders Club is supported by Havas Group (havas.com) - a global communication network founded in 1835 by Charles Louis Havas, employing 19,000 people in over 100 countries. HAVAS CX Istanbul is one of the technology hubs and deliver development services to North American and European clients, collaborating with different offices ranging from Toronto to Singapore. \n' +
+      '\n' +
+      'We create digital platforms utilizing latest front-end and back-end technologies - including but not limited to React, Pyhton, .net, NodeJs and GoLang. Joining us means joining a awesome global development team that delivers!',
     cta: {
       href: '#',
       text: 'Apply Now',
@@ -16,7 +18,12 @@ export const data: Content = {
     icons: [
       {
         href: '#',
-        alt: '',
+        alt: 'Havas CX',
+        path: '/images/havas-cx.svg',
+      },
+      {
+        href: '#',
+        alt: 'ProjectHouse',
         path: '/images/ph.svg',
       },
     ],
