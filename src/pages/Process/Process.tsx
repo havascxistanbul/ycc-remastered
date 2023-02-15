@@ -9,7 +9,7 @@ function Process(): JSX.Element {
       <Navbar />
       <Main>
         <Content>
-          <LeftCol props={data.leftCol} />
+          <LeftCol src={data.leftCol} />
           <RightCol
             header={data.rightCol.header}
             paragraph={data.rightCol.paragraph}
