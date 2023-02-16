@@ -1,23 +1,20 @@
 import React from 'react';
-import { Content, LeftCol, Navbar, RightCol } from '../../componenets';
+import { Content, LeftCol, RightCol } from '../../componenets';
 import { Main } from '../../layout';
 import { data } from './data';
 
 function Home(): JSX.Element {
   return (
-    <>
-      <Navbar />
-      <Main>
-        <Content>
-          <LeftCol src={data.leftCol} />
-          <RightCol
-            header={data.rightCol.header}
-            paragraph={data.rightCol.paragraph}
-            cta={data.rightCol.cta}
-          />
-        </Content>
-      </Main>
-    </>
+    <Main>
+      <Content>
+        <LeftCol src={data.leftCol} />
+        <RightCol
+          header={data.rightCol.header}
+          paragraph={data.rightCol.paragraph}
+          cta={data.rightCol.cta}
+        />
+      </Content>
+    </Main>
   );
 }
 
