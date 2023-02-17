@@ -6,7 +6,11 @@ interface LayoutProps {
 }
 
 function Main({ children }: LayoutProps): JSX.Element {
-  return <main>{children}</main>;
+  return (
+    <>
+      <main>{children}</main>
+    </>
+  );
 }
 
 export default Main;
