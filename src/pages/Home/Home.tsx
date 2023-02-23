@@ -2,7 +2,7 @@ import React from 'react';
 import { Content, LeftCol, RightCol } from '../../componenets';
 import { Main } from '../../layout';
 import { data } from './data';
-import { HomeAnimation } from '../../componenets/HomeAnimation';
+import { HomeAnimation } from '../../componenets/Animations';
 
 function Home(): JSX.Element {
   return (
