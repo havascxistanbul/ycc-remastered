@@ -2,17 +2,13 @@ import React from 'react';
 import './styles.scss';
 
 interface LeftColProps {
-  src: string;
+  children: React.ReactNode;
 }
-function LeftCol({ src }: LeftColProps): JSX.Element {
-  console.log(src);
 
+function LeftCol({ children }: LeftColProps): JSX.Element {
   return (
     <div className="left-col">
-      <img
-        src="https://picsum.photos/670/832"
-        alt=""
-      />
+      {children}
     </div>
   );
 }
