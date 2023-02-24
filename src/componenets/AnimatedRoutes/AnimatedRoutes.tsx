@@ -18,11 +18,11 @@ function AnimatedRoutes(): JSX.Element {
             path={route.path}
             element={
               <m.div
-                style={{ position: 'relative' }}
-                initial={{ left: '-100vw' }}
-                animate={{ left: 0 }}
-                exit={{ left: '100vw', position: 'absolute' }}
-                transition={{ duration: 0.5, ease: 'easeOut' }}
+              // style={{ position: 'relative' }}
+              // initial={{ left: '-100vw' }}
+              // animate={{ left: 0 }}
+              // exit={{ left: '100vw', position: 'absolute' }}
+              // transition={{ duration: 0.5, ease: 'easeOut' }}
               >
                 <route.element />
               </m.div>
