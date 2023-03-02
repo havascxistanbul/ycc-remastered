@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { Content, LeftCol, RightCol } from '../../components';
+import { Content, LeftCol, RightCol, ApplyAnimation, TestAnimation } from '../../components';
 import { Main } from '../../layout';
 import { data } from './data';
-import { ApplyAnimation } from '../../components/Animations';
 
 function Process(): JSX.Element {
   const [index, setIndex] = useState(0);
-  console.log(index);
 
   return (
     <Main>
       <Content>
         <LeftCol>
-          <ApplyAnimation />
+          {index === 0 && <ApplyAnimation />}
+          {index === 1 && <TestAnimation />}
+          {index === 2 && <ApplyAnimation />}
         </LeftCol>
         <RightCol
           header={data.rightCol.header}
