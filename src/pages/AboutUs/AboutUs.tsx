@@ -1,8 +1,7 @@
 import React from 'react';
-import { Content, LeftCol, RightCol } from '../../components';
+import { Content, LeftCol, RightCol, AboutAnimation } from '../../components';
 import { Main } from '../../layout';
 import { data } from './data';
-import { AboutAnimation } from '../../components/Animations';
 
 function AboutUs(): JSX.Element {
   return (
