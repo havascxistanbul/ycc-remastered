@@ -7,7 +7,7 @@ import { Accordion } from '../Accordion';
 import { Slider } from '../Slider';
 import './styles.scss';
 
-function RightCol({ header, paragraph, cta, qna, slider, icons }: RightColTypes): JSX.Element {
+function RightCol({ header, paragraph, cta, qna, slider, icons, setIndex }: RightColTypes): JSX.Element {
   return (
     <div className={clsx('right-col', qna === undefined && 'right-col--alt')}>
       <h2 className="right-col__header">{header}</h2>
@@ -43,7 +43,12 @@ function RightCol({ header, paragraph, cta, qna, slider, icons }: RightColTypes)
         </a>
       )}
       {qna !== undefined && <Accordion items={qna} />}
-      {slider !== undefined && <Slider slider={slider} />}
+      {slider !== undefined && (
+        <Slider
+          slider={slider}
+          setIndex={setIndex}
+        />
+      )}
     </div>
   );
 }

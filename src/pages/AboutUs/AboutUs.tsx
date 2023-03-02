@@ -1,15 +1,15 @@
 import React from 'react';
-import { Content, LeftCol, RightCol } from '../../componenets';
+import { Content, LeftCol, RightCol } from '../../components';
 import { Main } from '../../layout';
 import { data } from './data';
-import { AboutAnimation } from '../../componenets/Animations';
+import { AboutAnimation } from '../../components/Animations';
 
 function AboutUs(): JSX.Element {
   return (
     <Main>
       <Content>
         <LeftCol>
-           <AboutAnimation />
+          <AboutAnimation />
         </LeftCol>
         <RightCol
           header={data.rightCol.header}

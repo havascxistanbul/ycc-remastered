@@ -10,9 +10,10 @@ import { SliderLeftChevron, SliderRightChevron } from '../Icons';
 
 interface SliderProps {
   slider: Slide[];
+  setIndex: React.Dispatch<React.SetStateAction<number>> | undefined;
 }
 
-function Slider({ slider }: SliderProps): JSX.Element {
+function Slider({ slider, setIndex }: SliderProps): JSX.Element {
   return (
     <>
       <Swiper
@@ -22,6 +23,11 @@ function Slider({ slider }: SliderProps): JSX.Element {
           nextEl: '#slider-next',
         }}
         modules={[Pagination, Navigation]}
+        onSlideChange={(swiper) => {
+          if (setIndex !== undefined) {
+            setIndex(swiper.activeIndex);
+          }
+        }}
         className="slider"
       >
         {slider.map((item, index) => (
@@ -29,10 +35,16 @@ function Slider({ slider }: SliderProps): JSX.Element {
             <div className="slider__header">
               <h3 className="slider__title">{item.header}</h3>
               <div className="slider__chevrons">
-                <button className="slider__chevron" id="slider-prev">
+                <button
+                  className="slider__chevron"
+                  id="slider-prev"
+                >
                   <SliderLeftChevron className="h-5 w-5 text-midnight" />
                 </button>
-                <button className="slider__chevron" id="slider-next">
+                <button
+                  className="slider__chevron"
+                  id="slider-next"
+                >
                   <SliderRightChevron className="h-5 w-5 text-midnight" />
                 </button>
               </div>

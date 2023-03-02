@@ -1,4 +1,4 @@
-import { type RightColTypes } from '../../componenets/RightCol/types';
+import { type RightColTypes } from '../../components/RightCol/types';
 export interface Content {
   leftCol: string;
   rightCol: RightColTypes;
