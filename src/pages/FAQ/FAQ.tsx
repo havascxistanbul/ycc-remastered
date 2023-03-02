@@ -1,15 +1,14 @@
 import React from 'react';
-import { Content, LeftCol, RightCol } from '../../components';
+import { Content, LeftCol, RightCol, FaqAnimation } from '../../components';
 import { Main } from '../../layout';
 import { data } from './data';
-import { AboutAnimation } from '../../components/Animations';
 
 function FAQ(): JSX.Element {
   return (
     <Main>
       <Content>
         <LeftCol>
-          <AboutAnimation />
+          <FaqAnimation />
         </LeftCol>
         <RightCol
           header={data.rightCol.header}
