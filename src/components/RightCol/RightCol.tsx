@@ -10,8 +10,10 @@ import './styles.scss';
 function RightCol({ header, paragraph, cta, qna, slider, icons, setIndex }: RightColTypes): JSX.Element {
   return (
     <div className={clsx('right-col', qna === undefined && 'right-col--alt')}>
-      <h2 className="right-col__header">{header}</h2>
-      <p className="right-col__paragraph">{paragraph}</p>
+      <div>
+        <h2 className="right-col__header">{header}</h2>
+        <p className="right-col__paragraph">{paragraph}</p>
+      </div>
       {icons !== undefined && (
         <ul className="right-col__icons">
           {icons.map((icon) => (
