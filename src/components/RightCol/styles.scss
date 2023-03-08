@@ -1,9 +1,14 @@
 @import '../../styles/colors.scss';
+@import '../../styles/mixins/breakpoints.scss';
 
 .right-col {
   overflow-y: auto;
   flex: 1;
   height: 100%;
+
+  @include small_desktop {
+    //height: ;
+  }
 
   &--alt {
     height: auto;
