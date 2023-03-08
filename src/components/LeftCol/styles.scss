@@ -2,8 +2,8 @@
   align-self: start;
   flex: 1;
   height: 100%;
-
-  & > img {
-    height: 100%;
-  }
+  background-image: url(public/images/bg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
