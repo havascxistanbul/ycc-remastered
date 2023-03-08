@@ -1,10 +1,15 @@
 @import '../../styles/colors.scss';
+@import '../../styles/mixins/breakpoints.scss';
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-block: 55px;
+
+  @include small_desktop {
+    padding-inline: 1.25em;
+  }
 
   &-list {
     display: flex;

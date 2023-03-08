@@ -1,3 +1,4 @@
+@import '../../styles/mixins/breakpoints.scss';
 @import '../../styles/colors.scss';
 
 .slider {
@@ -34,6 +35,10 @@
   &__paragraph {
     color: $text-gray;
     margin-top: 1.875em;
+
+    @include small_desktop {
+      text-align: left;
+    }
   }
 }
 

@@ -1,7 +1,13 @@
+@import '../../styles/mixins/breakpoints.scss';
+
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3.125em;
   height: 52em;
+
+  @include small_desktop {
+    display: block;
+  }
 }
