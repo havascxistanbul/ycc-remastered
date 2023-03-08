@@ -51,7 +51,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>): JSX.Element => {
           </stop>
           <stop
             offset="0"
-            stopColor="#fff"
+            stopColor="transparent"
           >
             <animate
               dur="1s"
