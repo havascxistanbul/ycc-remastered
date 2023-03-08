@@ -4,6 +4,8 @@ import { Main } from '../../layout';
 import { data } from './data';
 
 function Home(): JSX.Element {
+  const tempParagraph =
+    'Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. ';
   return (
     <Main>
       <Content>
@@ -12,7 +14,7 @@ function Home(): JSX.Element {
         </LeftCol>
         <RightCol
           header={data.rightCol.header}
-          paragraph={data.rightCol.paragraph}
+          paragraph={tempParagraph}
           cta={data.rightCol.cta}
         />
       </Content>
