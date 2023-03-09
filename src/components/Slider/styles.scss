@@ -39,6 +39,14 @@
     @include small_desktop {
       text-align: left;
     }
+
+    @include tablet {
+      text-align: left;
+    }
+
+    @include mobile {
+      text-align: left;
+    }
   }
 }
 

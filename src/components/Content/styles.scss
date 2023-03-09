@@ -10,4 +10,12 @@
   @include small_desktop {
     display: block;
   }
+
+  @include tablet {
+    display: block;
+  }
+
+  @include mobile {
+    display: block;
+  }
 }

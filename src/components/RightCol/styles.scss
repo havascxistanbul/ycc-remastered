@@ -16,6 +16,22 @@
     width: 100%;
   }
 
+  @include tablet {
+    align-self: center;
+    text-align: center;
+    margin-top: 1.25em;
+    padding-inline: 1.25em;
+    width: 100%;
+  }
+
+  @include mobile {
+    align-self: center;
+    text-align: center;
+    margin-top: 1.25em;
+    padding-inline: 1.25em;
+    width: 100%;
+  }
+
   &--alt {
     height: auto;
     display: block;

@@ -11,6 +11,14 @@
     padding-inline: 1.25em;
   }
 
+  @include tablet {
+    padding-inline: 1.25em;
+  }
+
+  @include mobile {
+    padding-inline: 1.25em;
+  }
+
   &-list {
     display: flex;
     align-items: center;
