@@ -4,8 +4,43 @@ import { Main } from '../../layout';
 import { data } from './data';
 
 function FAQ(): JSX.Element {
-  const tempParagraph =
-    'Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. ';
+  const tempFaq = [
+    {
+      header: 'Question',
+      paragraph:
+        'Lorem ipsum dolor sit amet consectetur. Fermentum in dictum venenatis iaculis consectetur massa congue. Risus sapien integer tristique condimentum. In aliquam posuere lacus vestibulum donec arcu. Facilisis pellentesque sed eu enim ipsum quisque. Massa feugiat cum neque nunc.',
+    },
+    {
+      header: 'Question',
+      paragraph:
+        'Lorem ipsum dolor sit amet consectetur. Fermentum in dictum venenatis iaculis consectetur massa congue. Risus sapien integer tristique condimentum. In aliquam posuere lacus vestibulum donec arcu. Facilisis pellentesque sed eu enim ipsum quisque. Massa feugiat cum neque nunc.',
+    },
+    {
+      header: 'Question',
+      paragraph:
+        'Lorem ipsum dolor sit amet consectetur. Fermentum in dictum venenatis iaculis consectetur massa congue. Risus sapien integer tristique condimentum. In aliquam posuere lacus vestibulum donec arcu. Facilisis pellentesque sed eu enim ipsum quisque. Massa feugiat cum neque nunc.',
+    },
+    {
+      header: 'Question',
+      paragraph:
+        'Lorem ipsum dolor sit amet consectetur. Fermentum in dictum venenatis iaculis consectetur massa congue. Risus sapien integer tristique condimentum. In aliquam posuere lacus vestibulum donec arcu. Facilisis pellentesque sed eu enim ipsum quisque. Massa feugiat cum neque nunc.',
+    },
+    {
+      header: 'Question',
+      paragraph:
+        'Lorem ipsum dolor sit amet consectetur. Fermentum in dictum venenatis iaculis consectetur massa congue. Risus sapien integer tristique condimentum. In aliquam posuere lacus vestibulum donec arcu. Facilisis pellentesque sed eu enim ipsum quisque. Massa feugiat cum neque nunc.',
+    },
+    {
+      header: 'Question',
+      paragraph:
+        'Lorem ipsum dolor sit amet consectetur. Fermentum in dictum venenatis iaculis consectetur massa congue. Risus sapien integer tristique condimentum. In aliquam posuere lacus vestibulum donec arcu. Facilisis pellentesque sed eu enim ipsum quisque. Massa feugiat cum neque nunc.',
+    },
+    {
+      header: 'Question',
+      paragraph:
+        'Lorem ipsum dolor sit amet consectetur. Fermentum in dictum venenatis iaculis consectetur massa congue. Risus sapien integer tristique condimentum. In aliquam posuere lacus vestibulum donec arcu. Facilisis pellentesque sed eu enim ipsum quisque. Massa feugiat cum neque nunc.',
+    },
+  ];
 
   return (
     <Main>
@@ -15,8 +50,7 @@ function FAQ(): JSX.Element {
         </LeftCol>
         <RightCol
           header={data.rightCol.header}
-          paragraph={tempParagraph}
-          qna={data.rightCol.qna}
+          qna={tempFaq}
         />
       </Content>
     </Main>
