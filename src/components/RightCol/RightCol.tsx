@@ -12,7 +12,7 @@ function RightCol({ header, paragraph, cta, qna, slider, icons, setIndex }: Righ
     <div className={clsx('right-col', qna === undefined && 'right-col--alt')}>
       <div>
         <h2 className="right-col__header">{header}</h2>
-        <p className="right-col__paragraph">{paragraph}</p>
+        {paragraph !== undefined && <p className="right-col__paragraph">{paragraph}</p>}
       </div>
       {icons !== undefined && (
         <ul className="right-col__icons">
