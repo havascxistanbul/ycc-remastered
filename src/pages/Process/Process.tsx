@@ -5,6 +5,23 @@ import { data } from './data';
 
 function Process(): JSX.Element {
   const [index, setIndex] = useState(0);
+  const tempSlider = [
+    {
+      header: 'Applying the program',
+      paragraph:
+        'Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. ',
+    },
+    {
+      header: 'Applying the program',
+      paragraph:
+        'Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. ',
+    },
+    {
+      header: 'Applying the program',
+      paragraph:
+        'Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. ',
+    },
+  ];
 
   return (
     <Main>
@@ -16,7 +33,7 @@ function Process(): JSX.Element {
         </LeftCol>
         <RightCol
           header={data.rightCol.header}
-          slider={data.rightCol.slider}
+          slider={tempSlider}
           setIndex={setIndex}
         />
       </Content>
