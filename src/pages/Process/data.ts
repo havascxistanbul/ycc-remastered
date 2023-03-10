@@ -7,8 +7,6 @@ export const data: Content = {
   leftCol: 'asd',
   rightCol: {
     header: 'Are you just started your Software Development career?',
-    paragraph:
-      'There are a few steps we want you to complete to participate in Young Coders Club program. After successfully completing these stages, you will have the chance to work as a paid intern with our technology teams, then become one of our full-time team members working on technology projects around the world!',
     slider: [
       {
         header: 'Apply',
