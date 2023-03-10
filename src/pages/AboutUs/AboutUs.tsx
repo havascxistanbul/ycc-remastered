@@ -7,6 +7,8 @@ function AboutUs(): JSX.Element {
   const tempParagraph =
     'Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. Lorem ipsum dolor sit amet consectetur. Diam tellus nibh quis laoreet tellus sed hac turpis id. Elit leo ante augue quis rutrum. ';
 
+  const tempTitle = 'We want to share our experience with you';
+
   return (
     <Main>
       <Content>
@@ -14,7 +16,7 @@ function AboutUs(): JSX.Element {
           <AboutAnimation />
         </LeftCol>
         <RightCol
-          header={data.rightCol.header}
+          header={tempTitle}
           paragraph={tempParagraph}
           cta={data.rightCol.cta}
           icons={data.rightCol.icons}

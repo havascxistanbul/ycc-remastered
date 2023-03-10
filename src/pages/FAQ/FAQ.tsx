@@ -41,6 +41,7 @@ function FAQ(): JSX.Element {
         'Lorem ipsum dolor sit amet consectetur. Fermentum in dictum venenatis iaculis consectetur massa congue. Risus sapien integer tristique condimentum. In aliquam posuere lacus vestibulum donec arcu. Facilisis pellentesque sed eu enim ipsum quisque. Massa feugiat cum neque nunc.',
     },
   ];
+  const tempTitle = 'Frequently Asked Questions';
 
   return (
     <Main>
@@ -49,7 +50,7 @@ function FAQ(): JSX.Element {
           <FaqAnimation />
         </LeftCol>
         <RightCol
-          header={data.rightCol.header}
+          header={tempTitle}
           paragraph={data.rightCol.paragraph}
           qna={tempFaq}
         />

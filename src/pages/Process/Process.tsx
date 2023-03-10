@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Content, LeftCol, RightCol, ApplyAnimation, TestAnimation, InterviewAnimation } from '../../components';
 import { Main } from '../../layout';
-import { data } from './data';
 
 function Process(): JSX.Element {
   const [index, setIndex] = useState(0);
@@ -23,6 +22,8 @@ function Process(): JSX.Element {
     },
   ];
 
+  const tempTitle = 'Process';
+
   return (
     <Main>
       <Content>
@@ -32,7 +33,7 @@ function Process(): JSX.Element {
           {index === 2 && <InterviewAnimation />}
         </LeftCol>
         <RightCol
-          header={data.rightCol.header}
+          header={tempTitle}
           slider={tempSlider}
           setIndex={setIndex}
         />
