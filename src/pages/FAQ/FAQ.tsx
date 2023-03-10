@@ -50,6 +50,7 @@ function FAQ(): JSX.Element {
         </LeftCol>
         <RightCol
           header={data.rightCol.header}
+          paragraph={data.rightCol.paragraph}
           qna={tempFaq}
         />
       </Content>
