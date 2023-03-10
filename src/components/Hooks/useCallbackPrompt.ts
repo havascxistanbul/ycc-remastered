@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useBlocker } from './index';
 
 function useCallbackPrompt(when: boolean): Array<boolean | (() => void)> {
   const [show, setShow] = useState(true);
@@ -35,8 +34,6 @@ function useCallbackPrompt(when: boolean): Array<boolean | (() => void)> {
       navigate(lastLocation.location.pathname);
     }
   }, [confirmedNavigation, lastLocation]);
-
-  useBlocker(handleBlockedNavigation, when);
 
   return [show, confirmNavigation, cancelNavigation];
 }
