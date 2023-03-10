@@ -35,6 +35,7 @@
   &__paragraph {
     color: $text-gray;
     margin-top: 1.875em;
+    line-height: 1.5rem;
 
     @include small_desktop {
       text-align: left;
