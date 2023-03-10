@@ -19,7 +19,7 @@ export const data: Content = {
       {
         href: '#',
         alt: 'Havas CX',
-        path: '/images/havas-cx.svg',
+        path: '/images/ph.svg',
       },
       {
         href: '#',
